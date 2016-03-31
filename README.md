@@ -21,3 +21,9 @@ Both patterns feature the following.
   
 Both patterns use script packages that are written to pick up the IP Address (hostnames) of all the nodes in the pattern and use the hostnames to configure MQ and IIB such that all MQ and IIB connections between nodes are resolved at instantiation time. 
 When the pattern is started all the MQ channels start and the nodes come up in a fully connected load balancing MQ Cluster with "loop back" message flows running IIB to service the Application Queue Managers and the MQ Sample applications in the MQ Client only nodes can be used to drive traffic to the MQ Gateway queue managers with no additional set up.
+
+GPFS_HA_CollateralMQ8004_IIB10003.zip - contains the pattern export, all script packages plus full pattern documentation and setup and demo documentation for the IIB Prim/Standby on GPFS.
+
+NFS_HA_CollateralMQ8004_IIB10003.zip - contains the pattern export, all script packages plus full pattern documentation and setup and demo documentation for the IIB Client connect via CCDT on NFS.
+
+
