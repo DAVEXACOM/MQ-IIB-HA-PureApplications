@@ -1,0 +1,21 @@
+Issue deploying the MQ 8.0.0.4 software component on PureApplication 2.1.2.0 and higher. 
+APAR 15252 has been created for this issue, and an interim fix is available (1.0.0.2-WS-MQ-Pure-LAIT15252) 
+from the IBM Support Portal 
+https://www-945.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+MQ&release=8.0&platform=All&function=fixId&fixids=1.0.0.2-WS-MQ-Pure-LAIT15252&includeSupersedes=0
+
+APAR IT15252, PROBLEM SUMMARY :
+--------------------------------------------------------------------------------
+Due to an interface change in IBM Pure Application System 2.1.2.0, 2.2.0.0 and
+greater, installation and upgrade of IBM MQ at the latest maintenance level
+contained in the pattern-type will fail. Whilst the installation will appear to
+have worked, IBM MQ 8.0.0.2 will be installed and the subsequent fixpack update
+will not have been applied. This affects IBM MQ Pure Application System
+pattern-types 1.0.0.2 and earlier, leading to the following restrictions:
+
+For IBM Pure Application System releases earlier than 2.1.2.0 and at version
+2.1.2.1, you can install all versions of IBM MQ contained in the pattern-type.
+You can also apply maintenance to running pattern instances.
+
+For IBM Pure Application System 2.1.2.0, 2.2.0.0 and later, you can install IBM
+MQ 8.0.0.2 only. You cannot install later versions e.g., 8.0.0.4. You cannot
+apply maintenance to running pattern instances.
